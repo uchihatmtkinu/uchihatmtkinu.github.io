@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link href="style/my.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+  <meta property="og:title" content="2048 game"/>
+  <meta property="og:site_name" content="2048 game"/>
+
+ 
+<!--  <script src="js/jquery.js"></script>  no longer needed-->
+  <script type="text/javascript" src="js/my.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">朝代版 with 存储功能</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+    <br>
+    <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p><br>
+    
+    <div class="command" id="datacuston" style="text-align:left; float:left;">
+      <span id="restartbutton" class="button"><a  href="#restart">RESTART</a></span>
+    </div>
+    <div class="command" id="datacustom" >
+      <span id="savebutton" class="button"><a href="#savedata">SAVE</a></span>
+      <span id="loadbutton" class="button"><a href="#loaddata">LOAD</a></span>
+      <span id="backbutton" class="button"><a href="#back">BACK</a></span>
+    </div>
+   
+
+    <div class="game-container" style="margin-top: 23px;">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p class="game-explanation"  style="margin:0;padding:0;margin-top:-5px;">
+      <strong>Shortcut keys:</strong>
+      <br/>
+      <div  class="shortcut" style="float:left;">
+        <span   title="restart">SPACE</span>
+      </div>
+      <div class="shortcut" style="text-align:right; pading:1;">
+        <span title="save">Q</span>
+        <span title="reload">U</span>
+        <span title="back">Backspace</span>
+      </div>
+    </p>
+  
+    <hr>
+    <p>
+	妹子想玩朝代版但是觉得不能存档太不友好，于是借鉴了<a href="http://jerryjiahaha.github.io/2048/">jerryjiahaha</a>和<a href="http://oprilzeng.github.io/2048/full/">oprilzeng</a>的成果。。因为我太懒而且网页写不好啊！ 
+    </p>
+    by <a href="http://weibo.com/uchihatmtkinu" target="_blank">爱花痴的狗狗</a></p>
+    </div>
+  </div>
+
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_score_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+
+  <img border="0" src="style/131072.jpg" width="0" height="0"><img border="0" src="style/65536.jpg" width="0" height="0">
+</body>
+</html>

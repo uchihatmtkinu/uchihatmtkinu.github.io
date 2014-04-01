@@ -1,0 +1,31 @@
+h1.title{
+	font-size: 50px;
+}
+
+h1:hover{
+	color:rgb(114, 255, 102);
+}
+
+.command {
+	text-align:right;
+}
+
+.button{
+	display: inline-table;
+	padding-left: 10px;
+	
+}
+
+.button  a:link  { 
+	text-decoration: none;
+	border: 2px;
+}
+
+.button  a:hover{
+	color:rgb(102, 204, 255);
+	text-decoration : none;
+}
+
+.shortcut span:hover{
+	color:rgb(255, 79, 213);
+}
