@@ -1,4 +1,4 @@
-function HTMLActuator() {
+ï»¿function HTMLActuator() {
   this.tileContainer    = document.querySelector(".tile-container");
   this.scoreContainer   = document.querySelector(".score-container");
   this.bestContainer    = document.querySelector(".best-container");
@@ -54,21 +54,21 @@ HTMLActuator.prototype.clearContainer = function (container) {
 HTMLActuator.prototype.addTile = function (tile) {
   var text=new Array(18);
   text[0] = " ";
-  text[1] = "ÏÄ";
-  text[2] = "ÉÌ";
-  text[3] = "ÖÜ";
-  text[4] = "ÇØ";
-  text[5] = "ºº";
-  text[6] = "Èı¹ú";
-  text[7] = "½ú";
-  text[8] = "ÄÏ±±³¯";
-  text[9] = "Ëå";
-  text[10] = "ÌÆ";
-  text[11] = "Îå´ú<br>Ê®¹ú";
-  text[12] = "ËÎ";
-  text[13] = "Ôª";
-  text[14] = "Ã÷";
-  text[15] = "Çå";
+  text[1] = "å¤";
+  text[2] = "å•†";
+  text[3] = "å‘¨";
+  text[4] = "ç§¦";
+  text[5] = "æ±‰";
+  text[6] = "ä¸‰å›½";
+  text[7] = "æ™‹";
+  text[8] = "å—åŒ—æœ";
+  text[9] = "éš‹";
+  text[10] = "å”";
+  text[11] = "äº”ä»£<br>åå›½";
+  text[12] = "å®‹";
+  text[13] = "å…ƒ";
+  text[14] = "æ˜";
+  text[15] = "æ¸…";
   text[16] = " ";
   text[17] = " ";
   var self = this;
@@ -154,25 +154,25 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var mytxt=new Array(14);
-  mytxt[0]="Á¬ÇØÊ¼»Ê¶¼¼û²»µ½ÁËT.T";
-  mytxt[1]="²ÜÔôÄã»¹ÎÒ´óºº½­É½£¡";
-  mytxt[2]="¶¼ÊÇÕÔ¸ßº¦µÃÎÒ£¡";
-  mytxt[3]="Ë¾ÂíÀÏ¶ù¹ûÈ»¼éÕ©£¡";
-  mytxt[4]="½­É½ÄÑ×ø°¡£¡";
-  mytxt[5]="Ã÷³¯ÌìÏÂÒ»Í³£¬¿ÉÏ§¿´²»µ½ÁË£¡";
-  mytxt[6]="»ÙÔÚÑî¹ãÊÖÀïÁË¡­¡­";
-  mytxt[7]="°²Ê·Ö®ÂÒÍöÎÒ´óÌÆ¡­¡­";
-  mytxt[8]="ÕÔ¿ïØ·»ÆÅÛ¼ÓÉí£¬±ø²»ÑªÈĞ°¡£¡";
-  mytxt[9]="ÔªÈËÌúÌã¹ûÈ»À÷º¦£¡";
-  mytxt[10]="»¹ÊÇÖìÔªè°À÷º¦¡­¡­";
-  mytxt[11]="ÌìµØ»áµÄµÜĞÖÃÇ£¬·´Çå¸´Ã÷°¡£¡";
-  mytxt[12]="Á¬ĞÁº¥¸ïÃüµÄÀèÃ÷¶¼Ã»µÈµ½¡­¡­";
-  mytxt[13]="¿´²»µ½Ìì³¯µÄÌ«ÑôÁË = =";
+  mytxt[0]="è¿ç§¦å§‹çš‡éƒ½è§ä¸åˆ°äº†T.T";
+  mytxt[1]="æ›¹è´¼ä½ è¿˜æˆ‘å¤§æ±‰æ±Ÿå±±ï¼";
+  mytxt[2]="éƒ½æ˜¯èµµé«˜å®³å¾—æˆ‘ï¼";
+  mytxt[3]="å¸é©¬è€å„¿æœç„¶å¥¸è¯ˆï¼";
+  mytxt[4]="æ±Ÿå±±éš¾åå•Šï¼";
+  mytxt[5]="æ˜æœå¤©ä¸‹ä¸€ç»Ÿï¼Œå¯æƒœçœ‹ä¸åˆ°äº†ï¼";
+  mytxt[6]="æ¯åœ¨æ¨å¹¿æ‰‹é‡Œäº†â€¦â€¦";
+  mytxt[7]="å®‰å²ä¹‹ä¹±äº¡æˆ‘å¤§å”â€¦â€¦";
+  mytxt[8]="èµµåŒ¡èƒ¤é»„è¢åŠ èº«ï¼Œå…µä¸è¡€åˆƒå•Šï¼";
+  mytxt[9]="å…ƒäººé“è¹„æœç„¶å‰å®³ï¼";
+  mytxt[10]="è¿˜æ˜¯æœ±å…ƒç’‹å‰å®³â€¦â€¦";
+  mytxt[11]="å¤©åœ°ä¼šçš„å¼Ÿå…„ä»¬ï¼Œåæ¸…å¤æ˜å•Šï¼";
+  mytxt[12]="è¿è¾›äº¥é©å‘½çš„é»æ˜éƒ½æ²¡ç­‰åˆ°â€¦â€¦";
+  mytxt[13]="çœ‹ä¸åˆ°å¤©æœçš„å¤ªé˜³äº† = =";
 
 
   var text3 = function (m) { var r = 0; while (m > 1) r++, m >>= 1; return r; }
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "ÖĞ»ªÈËÃñ¹²ºÍ¹úÍòËê£¡" : mytxt[text3(maxscore)-3];
+  var message = won ? "ä¸­åäººæ°‘å…±å’Œå›½ä¸‡å²ï¼" : mytxt[text3(maxscore)-3];
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
